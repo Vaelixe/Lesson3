@@ -1,19 +1,14 @@
-const files = ["cat.jpg", "dog.png", "docunent.pdf", "Virus.exe"];
-for (const file of files){
-    if(file=== "cat.jpg"){
-        console.log("Пропускаем данную картинку")
-        continue;
+const pinCodes = ["1111", "5678", "1234", "9999"];
+const myPin = "1234";
 
-    }
-
-
-    if(file=== "Virus.exe"){
-        console.log("АЛАРМ! Вирус найден")
-        break
-    }
-    console.log("файл проверян:" + file)
+for (const pin of pinCodes) {
+  if (pin === myPin) {
+    console.log("Пин код найден: " + myPin);
+    break;
+  } else {
+    console.log("Неверный пин");
+  }
 }
-
 // files.push("music.mp3")
 
 // for (const file of files){
